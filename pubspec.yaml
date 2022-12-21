@@ -1,6 +1,7 @@
 name: finicity
 description: A new Flutter plugin for Finicity SDK
 version: 0.0.1
+repository: https://github.com/gvsakhil/finicity
 
 environment:
   sdk: '>=2.18.6 <3.0.0'
