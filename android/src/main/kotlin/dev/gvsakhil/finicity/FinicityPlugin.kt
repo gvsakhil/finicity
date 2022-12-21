@@ -34,7 +34,10 @@ class FinicityPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
     this.result = result;
     if (call.method == "initFinicity") {
-      start(activity, "https://connect2.finicity.com?customerId=6016856917&origin=url&partnerId=2445584079374&signature=9a3063c6fcfa95857fb9c8a8060afc2fbf44869601ddc072e516099867422200&timestamp=1671631616378&ttl=1671638816378", handler);
+      var connectUrl = call.argument<String>("connectUrl");
+      Log.d("connectUrl", "connectUrl");
+      Log.d(connectUrl, "connectUrl");
+      start(activity, connectUrl, handler);
     } else {
       result.notImplemented()
     }
@@ -59,7 +62,7 @@ class FinicityPlugin: FlutterPlugin, MethodCallHandler, ActivityAware {
     }
 
     override fun onCancel() {
-      TODO("Not yet implemented")
+      Connect.finishCurrentActivity();
     }
 
     override fun onError(errorEvent: JSONObject?) {

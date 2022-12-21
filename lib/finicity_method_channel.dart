@@ -10,8 +10,9 @@ class MethodChannelFinicity extends FinicityPlatform {
   final methodChannel = const MethodChannel('finicity');
 
   @override
-  Future<String?> initFinicity() async {
-    final version = await methodChannel.invokeMethod<String>('initFinicity');
+  Future<String?> initFinicity(connectUrl) async {
+    final version = await methodChannel
+        .invokeMethod<String>('initFinicity', {'connectUrl': connectUrl});
     return version;
   }
 }

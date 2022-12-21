@@ -23,7 +23,7 @@ abstract class FinicityPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<String?> initFinicity() {
+  Future<String?> initFinicity(connectUrl) {
     throw UnimplementedError('initFinicity() has not been implemented.');
   }
 }

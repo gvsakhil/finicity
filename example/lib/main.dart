@@ -24,7 +24,8 @@ class _MyAppState extends State<MyApp> {
         ),
         body: GestureDetector(
           onTap: () async {
-            var result = await _finicityPlugin.initFinicity();
+            var connectUrl = "";
+            var result = await _finicityPlugin.initFinicity(connectUrl);
             print(result);
           },
           child: const Center(
