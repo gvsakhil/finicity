@@ -1,6 +1,6 @@
-<p align="center"> Finicity Plugin
+<h4 align="center"> Finicity Plugin
     <br> 
-</p>
+</h4>
 
 ## 📝 Table of Contents
 
@@ -10,7 +10,7 @@
 
 ## 🧐 About <a name = "about"></a>
 
-I have been working with Finicity as part of my project, where it doesnot have any support for Flutter. I took an initiative to create one plugin as its one of my dream working on my own custom plugin. This is the first plugin in my career, so please do raise PR's if something can be improved.
+Throughout my project, I have been working with Finicity, which does not support Flutter. Since I have always dreamed of creating my own custom plugin, I decided to create one. As this is my first plugin, please raise PRs if something can be improved.
 
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
@@ -21,6 +21,8 @@ Initialize the plugin using final _finicityPlugin = Finicity();
 
 As a next step call initFinicity which starts the Finicity SDK
 var result = await _finicityPlugin.initFinicity(connectUrl);
+
+Do check the Example section to see implementation
 
 Note: To generate connect url follow this - https://developer.mastercard.com/open-banking-us/documentation/connect/generate-2-connect-url-apis/
 ```
