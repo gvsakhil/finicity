@@ -2,6 +2,10 @@
 
 * Initial Release
 
-## 
+## 0.0.2
 
 * Updated package to support connectUrl for Android
+
+## 0.0.3
+
+* Added IOS Support
