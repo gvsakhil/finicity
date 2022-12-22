@@ -9,12 +9,13 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A new Flutter plugin for Finicity SDK
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'https://github.com/gvsakhil/finicity'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Gvs Akhil' => 'gvsakhil@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.dependency 'Flutter'
+  s.dependency 'FinicityConnect'
   s.platform = :ios, '9.0'
 
   # Flutter.framework does not contain a i386 slice.

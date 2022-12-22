@@ -12,7 +12,7 @@ class MethodChannelFinicity extends FinicityPlatform {
   @override
   Future<String?> initFinicity(connectUrl) async {
     final version = await methodChannel
-        .invokeMethod<String>('initFinicity', {'connectUrl': connectUrl});
+        .invokeMethod<String>('initFinicity', {"connectUrl": connectUrl});
     return version;
   }
 }
