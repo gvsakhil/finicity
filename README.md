@@ -1,15 +1,30 @@
-# finicity
+<p align="center"> Finicity Plugin
+    <br> 
+</p>
 
-A new Flutter plugin for Finicity SDK
+## 📝 Table of Contents
 
-## Getting Started
+- [About](#about)
+- [Getting Started](#getting_started)
+- [Authors](#authors)
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+## 🧐 About <a name = "about"></a>
 
-For help getting started with Flutter development, view the
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+I have been working with Finicity as part of my project, where it doesnot have any support for Flutter. I took an initiative to create one plugin as its one of my dream working on my own custom plugin. This is the first plugin in my career, so please do raise PR's if something can be improved.
 
+## 🏁 Getting Started <a name = "getting_started"></a>
+
+```
+Add this finicity: ^0.0.4 as part of your pubspec.yaml file
+
+Initialize the plugin using final _finicityPlugin = Finicity();
+
+As a next step call initFinicity which starts the Finicity SDK
+var result = await _finicityPlugin.initFinicity(connectUrl);
+
+Note: To generate connect url follow this - https://developer.mastercard.com/open-banking-us/documentation/connect/generate-2-connect-url-apis/
+```
+
+## ✍️ Authors <a name = "authors"></a>
+
+- [@gvsakhil](https://github.com/gvsakhil) - Idea & work

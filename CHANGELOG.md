@@ -9,3 +9,7 @@
 ## 0.0.3
 
 * Added IOS Support
+
+## 0.0.4
+
+* Updated Readme
