@@ -15,6 +15,15 @@ Throughout my project, I have been working with Finicity, which does not support
 ## 🏁 Getting Started <a name = "getting_started"></a>
 
 ```
+Add this piece of code to your build.gradle file - android/build.gradle
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // add this
+    }
+}
+
 Add this finicity: ^0.0.4 as part of your pubspec.yaml file
 
 Initialize the plugin using final _finicityPlugin = Finicity();

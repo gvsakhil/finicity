@@ -17,3 +17,7 @@
 ## 0.0.5
 
 * Updated Readme
+
+## 0.0.6
+
+* Updated Readme
